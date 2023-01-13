@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARBAAZcode</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- External kit for icons -->
+    <script
+      src="https://kit.fontawesome.com/ef374a47ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- --------------------------------------------------- HOME PAGE SECTION ------------------------------------------------------------>
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <!-- here w have to use user image for the home page -->
+          <img src="./images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- in this <p> tag w will write our skills as heading-->
+          <p>Developer, Programmer and an Ai Enthusiast</p>
+          <h1>
+            Hi, I am <span>Mohammad</span><br />
+            Arbaaz Siddiqui
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------- ABOUT SECTION --------------------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <!-- Here we have to use th users image for the about section -->
+          <div class="about-col-1"><img src="./images/user.png" / ></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <!-- we have to write about the user here -->
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              ut, et obcaecati at corporis aliquid ex dolore quo aspernatur
+              officiis! Temporibus quos ab ipsa maiores. Sequi, nulla quidem.
+              Maiores, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Rerum enim tempora optio, facilis ea ex illum sequi sit a ipsam
+              dolores rem officia! Dolorem laudantium reiciendis nulla
+              laboriosam et labore.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- Skills Section -->
+            <!-- 
+              Sample Editing Code => <li><span></span></li>
+            -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Development</span><br />Websites, Front-end, Back-end
+                </li>
+                <li>
+                  <span>Problem Solving</span><br />Problem solving approaches
+                </li>
+                <li>
+                  <span>DSA</span><br />I have great hands in my Data Structures
+                  and Algorithm
+                </li>
+                <li>
+                  <span>Football Player</span><br />Including all small and big
+                  Tournaments I have played total <br />32 Tournaments. I
+                  reprented my school, my stadium-team, <br />
+                  my club-Ballers in various Tournaments and currently <br />
+                  representing my college-team as a Vice Captain.
+                </li>
+                <li>
+                  <span>Team Leader/Player</span><br />Possess a great team
+                  player and team leader qualities.
+                </li>
+              </ul>
+            </div>
+            <!-- Experience Section -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Development</span><br />I have been in Development field
+                  from past 3 months <br />and still counting.
+                </li>
+                <li>
+                  <span>Problem Solving</span><br />
+                  6 months of experience and still counting. I do competetive<br />
+                  programming and general problem solving on platforms <br />
+                  like - Leetcode, Code Studio, Code Chef, Hackerrank.
+                </li>
+                <li>
+                  <span>DSA</span><br />9 months of experience, solved approx
+                  300+ problems. <br />On every Friday, Saturday and Sunday I
+                  work on DSA.
+                </li>
+              </ul>
+            </div>
+            <!-- Education Section -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Schooling</span><br />From St. Joseph Inter College
+                  <br />Uttar Pradesh, Lucknow
+                </li>
+                <li>
+                  <span>2021-2025</span><br />Pursuing Btech Hons. in Computer
+                  Science <br />Specilsation in Artificial Intelligence from
+                  <br />Pranveer Singh Institute Of Technology <br />Uttar
+                  Pradesh, Kanpur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------- SERVICES SECTION -------------------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <!-- Service-1 -->
+          <div>
+            <!-- code for icon -->
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              non cumque nulla quam illo tempora consequuntur fugiat consequatur
+              exercitationem inventore eos minima veniam itaque minus totam
+              tempore, error iusto delectus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Service-2 -->
+          <div>
+            <!-- code for icon -->
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              non cumque nulla quam illo tempora consequuntur fugiat consequatur
+              exercitationem inventore eos minima veniam itaque minus totam
+              tempore, error iusto delectus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Serice-3 -->
+          <div>
+            <!-- code for icon -->
+            <i class="fa-solid fa-file-import"></i>
+            <h2>API</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              non cumque nulla quam illo tempora consequuntur fugiat consequatur
+              exercitationem inventore eos minima veniam itaque minus totam
+              tempore, error iusto delectus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Service-4 -->
+          <div>
+            <!-- code for icon -->
+            <img
+              src="./images/icons8-bug-50.png"
+              class="bug"
+              height="50px"
+              width="50px"
+              id="bug"
+            />
+            <h2>Debugging</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              non cumque nulla quam illo tempora consequuntur fugiat consequatur
+              exercitationem inventore eos minima veniam itaque minus totam
+              tempore, error iusto delectus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------- PORTFOLIO SECTION -------------------------------------------------------->
+    <div id="portfolio"></div>
+    <!-- code for buttons changing content [skills , expireince and education] -->
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/work-1.png" />
+          <div class="layer">
+            <h3>SOCIAL MEDIA APP</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              consequatur quis neque iste, quidem ipsum in quos reprehenderit!
+              Sint, temporibus.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-2.png" />
+          <div class="layer">
+            <h3>SOCIAL MEDIA APP</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              consequatur quis neque iste, quidem ipsum in quos reprehenderit!
+              Sint, temporibus.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-3.png" />
+          <div class="layer">
+            <h3>SOCIAL MEDIA APP</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              consequatur quis neque iste, quidem ipsum in quos reprehenderit!
+              Sint, temporibus.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+    <!-- ----------------------------------------------------- CONTACT ME SECTION -------------------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>arbaazsid737@gmail.com.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91 8881310786</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.whatsapp.com" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a
+              href="./images/RESUME.pdf"
+              download
+              class="btn btn2"
+              target="_blank"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                cols="10"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById('sidemenu');
+
+      function openmenu() {
+        sidemeu.style.right = '0';
+      }
+      function closemenu() {
+        sidemeu.style.right = '-200px';
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw46obCINBm9mVWNsQZ6lScKVHNpcoGjKy6krW4hzZV60OPrsKwMEyLY3epgQ_vPNnZ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset() 
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </script> -->
+  </body>
+</html>
